@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">MamesserAssign1</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="travel_expenses_">"Travel Expenses "</string>
 

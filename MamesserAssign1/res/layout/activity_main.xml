@@ -18,4 +18,54 @@
         android:text="@string/travel_expenses_"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/AddClaimButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/DeleteClaimButton"
+        android:layout_alignLeft="@+id/DeleteClaimButton"
+        android:layout_alignEnd="@+id/DeleteClaimButton"
+        android:layout_alignRight="@+id/DeleteClaimButton"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="21dp"
+        android:text="Add Claim" />
+
+    <Button
+        android:id="@+id/EditClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/DeleteClaimButton"
+        android:layout_alignRight="@+id/DeleteClaimButton"
+        android:layout_centerVertical="true"
+        android:text="Edit Claim" />
+
+    <Button
+        android:id="@+id/SendingClaimButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditClaimButton"
+        android:layout_alignRight="@+id/EditClaimButton"
+        android:layout_below="@+id/EditClaimButton"
+        android:layout_marginTop="16dp"
+        android:text="Send a Claim" />
+
+    <Button
+        android:id="@+id/ClaimStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SendingClaimButton"
+        android:layout_alignRight="@+id/SendingClaimButton"
+        android:layout_below="@+id/SendingClaimButton"
+        android:layout_marginTop="14dp"
+        android:text="View Claim Status" />
+
+    <Button
+        android:id="@+id/DeleteClaimButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AddClaimButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Delete Claim" />
+
 </RelativeLayout>
