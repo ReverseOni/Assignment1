@@ -1,0 +1,7 @@
+package cs.ualberta.ca.mamesserassign1.test;
+
+import junit.framework.TestCase;
+
+public class ExpenseTest extends TestCase {
+
+}

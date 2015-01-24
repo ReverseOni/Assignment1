@@ -1,0 +1,12 @@
+package cs.ualberta.ca.mamesserassign1;
+
+public class Expense {
+	public String category;
+	public int date;
+	public String description;
+	public float amount;
+	public String currency;
+	
+	
+
+}

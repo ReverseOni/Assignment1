@@ -1,0 +1,9 @@
+package cs.ualberta.ca.mamesserassign1.test;
+
+public class Date {
+	public int year;
+	public int month;
+	public int day;
+	
+
+}

@@ -1,0 +1,9 @@
+package cs.ualberta.ca.mamesserassign1;
+
+import java.util.ArrayList;
+
+public class ClaimsList {
+	protected ArrayList<Claims> claimList;
+	
+
+}

@@ -1,0 +1,11 @@
+package cs.ualberta.ca.mamesserassign1;
+import cs.ualberta.ca.mamesserassign1.Date;
+
+public class Expense {
+	public Expense(String category, Date date, String description,
+			double amount, String currency) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

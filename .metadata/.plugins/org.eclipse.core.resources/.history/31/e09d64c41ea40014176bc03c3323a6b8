@@ -1,0 +1,13 @@
+package cs.ualberta.ca.mamesserassign1;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ExpenseList {
+
+	public Collection<Expense> getExpenses() {
+		// TODO Auto-generated method stub
+		return new ArrayList<Expense>();
+	}
+
+}

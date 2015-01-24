@@ -1,0 +1,12 @@
+package cs.ualberta.ca.mamesserassign1.test;
+
+import junit.framework.TestCase;
+import cs.ualberta.ca.mamesserassign1.Expense;
+public class ExpenseTest extends TestCase {
+	public void testExpense(){
+		Expense expense = new Expense(String category, int date);
+		
+		
+	}
+
+}
