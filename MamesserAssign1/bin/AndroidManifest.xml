@@ -22,6 +22,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ClaimsActivity"
+            android:label="@string/title_activity_claims" >
+        </activity>
+        <activity
+            android:name=".NewClaimActivity"
+            android:label="@string/title_activity_new_claim" >
+        </activity>
+        <activity
+            android:name=".EditClaimsListActivity"
+            android:label="@string/title_activity_edit_claims_list" >
+        </activity>
+        <activity
+            android:name=".AddExpenseClaimsList"
+            android:label="@string/title_activity_add_expense_claims_list" >
+        </activity>
+        <activity
+            android:name=".EmailClaimActivity"
+            android:label="@string/title_activity_email_claim" >
+        </activity>
+        <activity
+            android:name=".ClaimsStatusListActivity"
+            android:label="@string/title_activity_claims_status_list" >
+        </activity>
+        <activity
+            android:name=".AddExpenseActivity"
+            android:label="@string/title_activity_add_expense" >
+        </activity>
     </application>
 
 </manifest>
