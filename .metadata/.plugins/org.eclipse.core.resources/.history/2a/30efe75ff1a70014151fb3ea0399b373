@@ -1,7 +1,5 @@
 package cs.ualberta.ca.mamesserassign1;
-
-import java.util.Date;
-
+import cs.ualberta.ca.mamesserassign1.Date;
 
 public class Expense {
 	String category;

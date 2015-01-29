@@ -19,7 +19,7 @@ public class ExpenseListTest extends TestCase {
 		ExpenseList expenseList = new ExpenseList();
 		
 		String category = "N/A";
-		Date date = new Date();
+		Date date = new date;
 		String description = "I am doing the default right now";
 		double amount = 20.00;
 		String currency = "CAD";
