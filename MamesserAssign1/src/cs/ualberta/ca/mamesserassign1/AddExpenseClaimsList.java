@@ -1,9 +1,17 @@
 package cs.ualberta.ca.mamesserassign1;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import android.widget.ArrayAdapter;
+
+import android.widget.ListView;
 
 public class AddExpenseClaimsList extends Activity {
 
@@ -11,7 +19,25 @@ public class AddExpenseClaimsList extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_expense_claims_list);
+
+		ListView addClaimsListView = (ListView) findViewById(R.id.addExpenseListView);
+		Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
+		final ArrayList<Claims> list = new ArrayList<Claims>(claims);
+		final ArrayAdapter<Claims> claimsAdapter = new ArrayAdapter<Claims>(this,android.R.layout.activity_list_item,list);
+		addClaimsListView.setAdapter(claimsAdapter);
+		
+		ClaimsListController.getClaimsList().addListener(new ClaimsListListener() {
+			
+			@Override
+			public void update() {
+				list.clear();
+				Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
+				list.addAll(claims);
+				claimsAdapter.notifyDataSetChanged();
+			}
+		});
 	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -19,6 +45,9 @@ public class AddExpenseClaimsList extends Activity {
 		getMenuInflater().inflate(R.menu.add_expense_claims_list, menu);
 		return true;
 	}
+	
+	
+
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

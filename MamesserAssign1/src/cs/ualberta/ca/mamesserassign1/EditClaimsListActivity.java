@@ -1,9 +1,14 @@
 package cs.ualberta.ca.mamesserassign1;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class EditClaimsListActivity extends Activity {
 
@@ -11,6 +16,11 @@ public class EditClaimsListActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.edit_claims_list);
+		ListView editClaimsListView = (ListView) findViewById(R.id.EditClaimsList);
+		Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
+		ArrayList<Claims> list = new ArrayList<Claims>(claims);
+		ArrayAdapter<Claims> claimsAdapter = new ArrayAdapter<Claims>(this,android.R.layout.simple_list_item_1,list);
+		editClaimsListView.setAdapter(claimsAdapter);
 	}
 
 	@Override

@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.ExpenseList"/>
 <fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.Expense"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.NewClaimActivity"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.EmailClaimActivity"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.ClaimsStatusListActivity"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.R.id"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.ClaimsListController"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.ClaimsListListener"/>
+<fullyQualifiedTypeName name="cs.ualberta.ca.mamesserassign1.AddExpenseClaimsList"/>
 </qualifiedTypeNameHistroy>

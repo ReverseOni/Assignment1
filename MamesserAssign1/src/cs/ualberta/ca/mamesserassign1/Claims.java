@@ -8,6 +8,14 @@ public class Claims {
 	public Date startDate;
 	public Date endDate;
 	
+	public Claims(String claimName, String status, Date startDate, Date endDate){
+		this.claimName = claimName;
+		this.status = status;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		}
+	
+	
 	public Date getStartDate() {
 		return startDate;
 	}
@@ -20,9 +28,6 @@ public class Claims {
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	public Claims(String claimName){
-		this.claimName = claimName;
-	}
 	public void claimStatus(String status){
 		this.status = status;
 	}
@@ -31,6 +36,10 @@ public class Claims {
 	}
 	public String getStatus(){
 		return this.status;
+	}
+	
+	public String toString(){
+		return getName();
 	}
 
 }

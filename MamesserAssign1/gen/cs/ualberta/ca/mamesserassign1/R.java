@@ -52,13 +52,13 @@ public final class R {
         public static final int SendingClaimButton=0x7f080004;
         public static final int SetExpenseButton=0x7f08001c;
         public static final int action_settings=0x7f080025;
+        public static final int addExpenseListView=0x7f080007;
         public static final int claimNameBox=0x7f080012;
         public static final int claimNameText=0x7f080011;
         public static final int createClaimButton=0x7f080016;
         public static final int createClaimTitle=0x7f080000;
         public static final int fromDateBox=0x7f080014;
         public static final int fromTextTitle=0x7f080015;
-        public static final int listView1=0x7f080007;
         public static final int textView1=0x7f080006;
         public static final int toDateBox=0x7f080018;
         public static final int toDateTitle=0x7f080017;

@@ -1,0 +1,22 @@
+package cs.ualberta.ca.mamesserassign1;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class ClaimsList {
+	protected ArrayList<Claims> claimsList;
+	
+	public ClaimsList(){
+		claimsList = new ArrayList<Claims>();
+	}
+	public Collection<Claims> getClaimsList(){
+		return claimsList;
+	}
+	public void addClaim(Claims claim){
+		claimsList.add(claim);
+	}
+	public void removeClaim(Claims claim){
+		claimsList.remove(claim);
+	}
+	
+}
