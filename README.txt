@@ -1,5 +1,6 @@
  <This program is designed to track travel expenses.>
     
+
 Copyright (C) <2015>  <Mitchell Messerschmidt>
 
     This program is free software: you can redistribute it and/or modify
@@ -14,4 +15,8 @@ Copyright (C) <2015>  <Mitchell Messerschmidt>
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+    
+    ****When cloning this software open it with import and run the Clean function under the Project tab.****
+    ****Process may be needed if running on a different platform****
 
