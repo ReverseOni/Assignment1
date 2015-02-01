@@ -12,5 +12,6 @@
     <string name="title_activity_email_claim">EmailClaim</string>
     <string name="title_activity_claims_status_list">Status Of Claims</string>
     <string name="title_activity_add_expense">Add Expense</string>
+    <string name="title_activity_expense_view">Expense View</string>
 
 </resources>

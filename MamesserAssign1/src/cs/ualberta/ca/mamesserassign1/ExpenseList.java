@@ -2,13 +2,16 @@ package cs.ualberta.ca.mamesserassign1;
 
 import java.util.ArrayList;
 import java.util.Collection;
+
 import cs.ualberta.ca.mamesserassign1.Expense;
 
 public class ExpenseList {
 	protected ArrayList<Expense> expenseList;
+	protected ArrayList<ExpenseListListener> listeners;
 	
 	public ExpenseList(){
 		expenseList = new ArrayList<Expense>();
+		listeners = new ArrayList<ExpenseListListener>();
 	}
 
 	public Collection<Expense> getExpenses() {
@@ -18,7 +21,23 @@ public class ExpenseList {
 
 	public void addExpense(Expense testExpense) {
 		expenseList.add(testExpense);
+		notifyListeners();
 		
 	}
 
+	public void addListener(ExpenseListListener expenseListListener) {
+		listeners.add(expenseListListener);
+		
+		
+	}
+	private void notifyListeners() {
+		for (ExpenseListListener listeners : listeners){
+			listeners.update();
+	}
+	}
+	public void removeListener(ExpenseListListener listen){
+		listeners.remove(listen);
+	}
+
 }
+

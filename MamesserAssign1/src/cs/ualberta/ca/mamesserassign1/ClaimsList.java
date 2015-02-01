@@ -22,7 +22,7 @@ public class ClaimsList {
 	private void notifyListeners() {
 		for (ClaimsListListener listeners : listeners){
 			listeners.update();
-			}
+	}
 		
 	}
 	public void removeClaim(Claims claim){
@@ -34,5 +34,8 @@ public class ClaimsList {
 	}
 	public void removeListener(ClaimsListListener listen){
 		listeners.remove(listen);
+	}
+	public int getNumberOfClaims(){
+		return claimsList.size();
 	}
 }

@@ -1,0 +1,63 @@
+package cs.ualberta.ca.mamesserassign1;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
+
+public class AddExpenseActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.new_expense);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.add_expense, menu);
+		return true;
+	}
+	public void AddNewExpenseButtonAction(View v){
+		try{
+		Toast.makeText(this, "Adding an Expense", Toast.LENGTH_SHORT).show();
+		ExpenseListController elc = new ExpenseListController();
+		
+		ExpandableListView expenseCat = (ExpandableListView) findViewById(R.id.CategoryExpandableList);
+		
+		EditText expenseDescription = (EditText) findViewById(R.id.AddExpenseDescriptionText);
+		
+		
+		EditText expenseAmount = (EditText) findViewById(R.id.AddExpenseAmount);
+		
+			String amount = expenseAmount.getText().toString();
+			ExpandableListView expenseCurrency = (ExpandableListView) findViewById(R.id.CurrencyTypeExpandableList);
+			elc.addExpense(new Expense(expenseCat.getTag().toString(),null,expenseDescription.getText().toString(), Double.parseDouble(amount), expenseCurrency.getTag().toString()));
+		}catch  (NumberFormatException e) {
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

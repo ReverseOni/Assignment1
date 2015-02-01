@@ -10,9 +10,9 @@ public class Expense {
 	double amount;
 	String currency;
 	
-	public Expense(String category, Date date, String description,double amount, String currency) {
+	public Expense(String category, String description,double amount, String currency) {
 		this.category = category;
-		this.date = date;
+		//this.date = date;
 		this.description = description;
 		this.amount = amount;
 		this.currency = currency;

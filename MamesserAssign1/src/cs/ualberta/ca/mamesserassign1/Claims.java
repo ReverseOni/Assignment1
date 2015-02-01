@@ -1,5 +1,6 @@
 package cs.ualberta.ca.mamesserassign1;
 
+
 import java.util.Date;
 
 public class Claims {
@@ -7,13 +8,15 @@ public class Claims {
 	public String status;
 	public Date startDate;
 	public Date endDate;
+	public ExpenseListController elc;
 	
-	public Claims(String claimName, String status, Date startDate, Date endDate){
+	public Claims(String claimName, String status){
 		this.claimName = claimName;
 		this.status = status;
-		this.startDate = startDate;
-		this.endDate = endDate;
-		}
+		this.elc = new ExpenseListController();
+		//this.startDate = startDate;
+		//this.endDate = endDate;
+	}
 	
 	
 	public Date getStartDate() {
@@ -31,15 +34,25 @@ public class Claims {
 	public void claimStatus(String status){
 		this.status = status;
 	}
-	public String getName(){
-		return this.claimName;
+	
+	public String getClaimName() {
+		return claimName;
 	}
+
+	public void setClaimName(String claimName) {
+		this.claimName = claimName;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	public String getStatus(){
 		return this.status;
 	}
 	
 	public String toString(){
-		return getName();
+		return getClaimName();
 	}
 
 }

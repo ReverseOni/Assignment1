@@ -128,10 +128,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/CurrencyTitle"
-        android:layout_alignStart="@+id/CurrencyTitle"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/CurrencyTitle"
+        android:onClick="AddNewExpenseButtonAction"
         android:text="Set New Expense" />
 
 </RelativeLayout>

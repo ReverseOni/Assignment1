@@ -1,0 +1,21 @@
+package cs.ualberta.ca.mamesserassign1;
+
+public class ClaimsListController {
+	private static ClaimsList claimsList = new ClaimsList();
+	
+	static public ClaimsList getClaimsList(){
+		if (claimsList == Null){
+			claimsList = new ClaimsList();
+		}else{
+			
+		return claimsList;
+		}
+	}
+
+	public void addClaim(Claims claims) {
+		
+		getClaimsList().addClaim(claims);
+		
+	}
+	
+}

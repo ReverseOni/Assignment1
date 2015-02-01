@@ -8,11 +8,12 @@ public class ClaimsListController {
 			claimsList = new ClaimsList();
 		}
 		return claimsList;
+		
 	}
 
-	public void addClaim(Claims claims) {
+	public void addClaim(Claims claim) {
 		
-		getClaimsList().addClaim(claims);
+		getClaimsList().addClaim(claim);
 		
 	}
 	

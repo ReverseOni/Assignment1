@@ -1,9 +1,15 @@
 package cs.ualberta.ca.mamesserassign1;
 
+import java.util.Date;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ExpandableListView;
+import android.widget.Toast;
 
 public class AddExpenseActivity extends Activity {
 
@@ -18,6 +24,35 @@ public class AddExpenseActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.add_expense, menu);
 		return true;
+	}
+	public void AddNewExpenseButtonAction(View v){
+		try{
+		Toast.makeText(this, "Adding an Expense", Toast.LENGTH_SHORT).show();
+		Date date = new Date();
+		ExpenseListController elc = new ExpenseListController();
+		
+		ExpandableListView expenseCat = (ExpandableListView) findViewById(R.id.CategoryExpandableList);
+		String expenseCatDefault = "Default";
+		
+		EditText expenseDescription = (EditText) findViewById(R.id.AddExpenseDescriptionText);
+		
+		
+		EditText expenseAmount = (EditText) findViewById(R.id.AddExpenseAmount);
+		
+		String amount = expenseAmount.getText().toString();
+		ExpandableListView expenseCurrency = (ExpandableListView) findViewById(R.id.CurrencyTypeExpandableList);
+		String expenseCurrencyDefault = "CAD";
+		
+		elc.addExpense(new Expense(expenseCatDefault,expenseDescription.getText().toString(), Double.parseDouble(amount), expenseCurrencyDefault));
+		}catch  (NumberFormatException e) {
+			
+		}
+		
+		
+		
+		
+		
+		
 	}
 
 	@Override

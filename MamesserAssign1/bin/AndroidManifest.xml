@@ -50,6 +50,10 @@
             android:name=".AddExpenseActivity"
             android:label="@string/title_activity_add_expense" >
         </activity>
+        <activity
+            android:name=".ExpenseViewActivity"
+            android:label="@string/title_activity_expense_view" >
+        </activity>
     </application>
 
 </manifest>
