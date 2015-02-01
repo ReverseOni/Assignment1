@@ -28,10 +28,10 @@ public class AddExpenseActivity extends Activity {
 	public void AddNewExpenseButtonAction(View v){
 		try{
 		Toast.makeText(this, "Adding an Expense", Toast.LENGTH_SHORT).show();
-		Date date = new Date();
+		//Date date = new Date();
 		ExpenseListController elc = new ExpenseListController();
 		
-		ExpandableListView expenseCat = (ExpandableListView) findViewById(R.id.CategoryExpandableList);
+		//ExpandableListView expenseCat = (ExpandableListView) findViewById(R.id.CategoryExpandableList);
 		String expenseCatDefault = "Default";
 		
 		EditText expenseDescription = (EditText) findViewById(R.id.AddExpenseDescriptionText);
@@ -40,7 +40,7 @@ public class AddExpenseActivity extends Activity {
 		EditText expenseAmount = (EditText) findViewById(R.id.AddExpenseAmount);
 		
 		String amount = expenseAmount.getText().toString();
-		ExpandableListView expenseCurrency = (ExpandableListView) findViewById(R.id.CurrencyTypeExpandableList);
+		//ExpandableListView expenseCurrency = (ExpandableListView) findViewById(R.id.CurrencyTypeExpandableList);
 		String expenseCurrencyDefault = "CAD";
 		
 		elc.addExpense(new Expense(expenseCatDefault,expenseDescription.getText().toString(), Double.parseDouble(amount), expenseCurrencyDefault));

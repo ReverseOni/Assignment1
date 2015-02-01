@@ -1,5 +1,5 @@
 package cs.ualberta.ca.mamesserassign1;
-
+//Creates a instance to be used throughout the life of the application
 public class ClaimsListController {
 	private static ClaimsList claimsList = null;
 	

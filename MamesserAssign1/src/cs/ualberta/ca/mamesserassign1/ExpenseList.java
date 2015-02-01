@@ -9,11 +9,13 @@ public class ExpenseList {
 	protected ArrayList<Expense> expenseList;
 	protected ArrayList<ExpenseListListener> listeners;
 	
+	//Constructor for this class
 	public ExpenseList(){
 		expenseList = new ArrayList<Expense>();
 		listeners = new ArrayList<ExpenseListListener>();
 	}
-
+	
+	//Below are getters and setters for the respective attributes
 	public Collection<Expense> getExpenses() {
 		
 		return expenseList;
@@ -24,6 +26,7 @@ public class ExpenseList {
 		notifyListeners();
 		
 	}
+	//Listener Functionality and methods so that expenselistview is updated
 
 	public void addListener(ExpenseListListener expenseListListener) {
 		listeners.add(expenseListListener);

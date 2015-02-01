@@ -8,10 +8,13 @@ public class ClaimsList {
 	protected ArrayList<Claims> claimsList;
 	protected ArrayList<ClaimsListListener> listeners;
 	
+	//Constructor for ClaimsList
 	public ClaimsList(){
 		claimsList = new ArrayList<Claims>();
 		listeners = new ArrayList<ClaimsListListener>();
 	}
+	
+	//Below are Getters and setters for the attributes of this class
 	public Collection<Claims> getClaims(){
 		return claimsList;
 	}
@@ -19,14 +22,16 @@ public class ClaimsList {
 		claimsList.add(claim);
 		notifyListeners();
 	}
+	
+	public void removeClaim(Claims claim){
+		claimsList.remove(claim);
+	}
+	//Listener Methods for updating ClaimsList list view
 	private void notifyListeners() {
 		for (ClaimsListListener listeners : listeners){
 			listeners.update();
 	}
 		
-	}
-	public void removeClaim(Claims claim){
-		claimsList.remove(claim);
 	}
 	
 	public void addListener(ClaimsListListener listen){
@@ -35,6 +40,7 @@ public class ClaimsList {
 	public void removeListener(ClaimsListListener listen){
 		listeners.remove(listen);
 	}
+	//Gets size of list
 	public int getNumberOfClaims(){
 		return claimsList.size();
 	}

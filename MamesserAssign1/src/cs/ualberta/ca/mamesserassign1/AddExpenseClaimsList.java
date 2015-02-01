@@ -56,7 +56,7 @@ public class AddExpenseClaimsList extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				Toast.makeText(AddExpenseClaimsList.this, "Going to Expenses", Toast.LENGTH_SHORT).show();
-				Intent intent = new Intent(parent.getContext(),AddExpenseActivity.class);
+				Intent intent = new Intent(parent.getContext(),ExpenseViewActivity.class);
 				startActivity(intent);
 				
 				}

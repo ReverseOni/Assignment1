@@ -1,0 +1,20 @@
+package cs.ualberta.ca.mamesserassign1;
+//Creates a instance to be used throughout the life of the app
+public class ClaimsListController {
+	private static ClaimsList claimsList = null;
+	
+	static public ClaimsList getClaimsList(){
+		if (claimsList == null){
+			claimsList = new ClaimsList();
+		}
+		return claimsList;
+		
+	}
+
+	public void addClaim(Claims claim) {
+		
+		getClaimsList().addClaim(claim);
+		
+	}
+	
+}

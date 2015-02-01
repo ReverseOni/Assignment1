@@ -2,14 +2,14 @@ package cs.ualberta.ca.mamesserassign1;
 
 import java.util.Date;
 
-
+//Expense Attributes
 public class Expense {
-	String category;
-	Date date;
-	String description;
-	double amount;
-	String currency;
-	
+	public String category;
+	public Date date;
+	public String description;
+	public double amount;
+	public String currency;
+	//Constructor, this is supposed to have date but again was causing issues with compiling
 	public Expense(String category, String description,double amount, String currency) {
 		this.category = category;
 		//this.date = date;
@@ -17,6 +17,7 @@ public class Expense {
 		this.amount = amount;
 		this.currency = currency;
 	}
+	//Below are getters and setters for the respective attributes
 
 	public String getCategory() {
 		return category;
@@ -56,6 +57,9 @@ public class Expense {
 
 	public void setCurrency(String currency) {
 		this.currency = currency;
+	}
+	public String toString(){
+		return getDescription()+"		"+getAmount();
 	}
 	
 	

@@ -9,7 +9,8 @@ public class Claims {
 	public Date startDate;
 	public Date endDate;
 	public ExpenseListController elc;
-	
+	//Constructor for Claims
+	//Date removed as it was causing issues with ListView 
 	public Claims(String claimName, String status){
 		this.claimName = claimName;
 		this.status = status;
@@ -18,7 +19,7 @@ public class Claims {
 		//this.endDate = endDate;
 	}
 	
-	
+	//Getters and Setters for all the attributes of Claims class
 	public Date getStartDate() {
 		return startDate;
 	}
@@ -50,9 +51,9 @@ public class Claims {
 	public String getStatus(){
 		return this.status;
 	}
-	
+	//To String for what I want to see in the ListView
 	public String toString(){
-		return getClaimName();
+		return getClaimName()+"       "+getStatus();
 	}
 
 }
