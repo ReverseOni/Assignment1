@@ -20,3 +20,15 @@ Copyright (C) <2015>  <Mitchell Messerschmidt>
     ****When cloning this software open it with import and run the Clean function under the Project tab.****
     ****Process may be needed if running on a different platform****
 
+Video Demo:
+	https://www.youtube.com/watch?v=TT6UeM4ar3s&feature=youtu.be
+
+Sources:
+
+	Student Picker for Android:  
+		http://youtu.be/5PPD0ncJU1g
+		http://youtu.be/VKVYUXNuDDg
+		http://youtu.be/k9ZNbsc0Qgo
+		http://youtu.be/fxjIA4HIruU
+		http://youtu.be/uLnoI7mbuEo
+
