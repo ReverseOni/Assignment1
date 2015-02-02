@@ -78,8 +78,9 @@ public class Expense {
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
+	//What I want the output of the listview to show
 	public String toString(){
-		return getDescription()+"		"+getAmount();
+		return getDescription()+"                         "+getAmount()+" "+getCurrency();
 	}
 	
 	

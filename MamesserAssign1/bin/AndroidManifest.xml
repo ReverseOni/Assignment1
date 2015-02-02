@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,36 +23,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ClaimsActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.ClaimsActivity"
             android:label="@string/title_activity_claims" >
         </activity>
         <activity
-            android:name=".NewClaimActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.NewClaimActivity"
             android:label="@string/title_activity_new_claim" >
         </activity>
         <activity
-            android:name=".EditClaimsListActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.EditClaimsListActivity"
             android:label="@string/title_activity_edit_claims_list" >
         </activity>
         <activity
-            android:name=".AddExpenseClaimsList"
+            android:name="cs.ualberta.ca.mamesserassign1.AddExpenseClaimsList"
             android:label="@string/title_activity_add_expense_claims_list" >
         </activity>
         <activity
-            android:name=".EmailClaimActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.EmailClaimActivity"
             android:label="@string/title_activity_email_claim" >
         </activity>
         <activity
-            android:name=".ClaimsStatusListActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.ClaimsStatusListActivity"
             android:label="@string/title_activity_claims_status_list" >
         </activity>
         <activity
-            android:name=".AddExpenseActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.AddExpenseActivity"
             android:label="@string/title_activity_add_expense" >
         </activity>
         <activity
-            android:name=".ExpenseViewActivity"
+            android:name="cs.ualberta.ca.mamesserassign1.ExpenseViewActivity"
             android:label="@string/title_activity_expense_view" >
+        </activity>
+        <activity
+            android:name="cs.ualberta.ca.mamesserassign1.EMailClaimsViewList"
+            android:label="@string/title_activity_email_claims_view_list" >
         </activity>
     </application>
 

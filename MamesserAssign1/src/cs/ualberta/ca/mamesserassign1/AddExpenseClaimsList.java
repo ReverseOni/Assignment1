@@ -46,22 +46,26 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class AddExpenseClaimsList extends Activity {
-	//String[] days = {"Sunday","Monday"};
+	
 
 	@Override
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.add_expense_claims_list);
+		//The adapter for the list view in the add expense claims list in the application
 		ListView addClaimsListView = (ListView) findViewById(R.id.addExpenseListView);
 		Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
 		final ArrayList<Claims> list = new ArrayList<Claims>(claims);
 		final ArrayAdapter<Claims> claimsAdapter = new ArrayAdapter<Claims>(this,android.R.layout.simple_list_item_1,list);
 		addClaimsListView.setAdapter(claimsAdapter);
-		Toast.makeText(this,"THis is my size" + claims.size(), Toast.LENGTH_LONG).show();
+		
 		
 		ClaimsListController.getClaimsList().addListener(new ClaimsListListener() {
 			
 			@Override
+			//Updating of information entered by the user.
+			//Updates the listview to show added items
 			public void update() {
 				list.clear();
 				Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
@@ -69,6 +73,7 @@ public class AddExpenseClaimsList extends Activity {
 				claimsAdapter.notifyDataSetChanged();
 			}
 		});
+		//OnClick listener for adding a expense to the claim in the listview
 		addClaimsListView.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override

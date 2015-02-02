@@ -23,6 +23,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class EmailClaimActivity extends Activity {
 
@@ -30,6 +32,9 @@ public class EmailClaimActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.email_claim);
+	}
+	public void sendYourClaimButtonAction(View v){
+		Toast.makeText(this, "Sending Your Claim", Toast.LENGTH_SHORT).show();
 	}
 
 	@Override

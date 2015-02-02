@@ -53,7 +53,7 @@ public class ExpenseList {
 		
 	}
 	private void notifyListeners() {
-		for (ExpenseListListener listeners : listeners){
+		for (ExpenseListListener listeners : this.listeners){
 			listeners.update();
 	}
 	}

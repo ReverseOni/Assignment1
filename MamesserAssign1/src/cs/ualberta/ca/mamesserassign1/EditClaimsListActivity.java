@@ -26,6 +26,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -37,9 +38,24 @@ public class EditClaimsListActivity extends Activity {
 		setContentView(R.layout.edit_claims_list);
 		ListView editClaimsListView = (ListView) findViewById(R.id.EditClaimsList);
 		Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
-		ArrayList<Claims> list = new ArrayList<Claims>(claims);
-		ArrayAdapter<Claims> claimsAdapter = new ArrayAdapter<Claims>(this,android.R.layout.simple_list_item_1,list);
+		final ArrayList<Claims> list = new ArrayList<Claims>(claims);
+		final ArrayAdapter<Claims> claimsAdapter = new ArrayAdapter<Claims>(this,android.R.layout.simple_list_item_1,list);
 		editClaimsListView.setAdapter(claimsAdapter);
+		
+		ClaimsListController.getClaimsList().addListener(new ClaimsListListener() {
+			
+			@Override
+			//Updating of information entered by the user.
+			//Updates the listview to show added items
+			public void update() {
+				list.clear();
+				Collection<Claims> claims = ClaimsListController.getClaimsList().getClaims();
+				list.addAll(claims);
+				claimsAdapter.notifyDataSetChanged();
+			}
+		});
+		
+		
 	}
 
 	@Override

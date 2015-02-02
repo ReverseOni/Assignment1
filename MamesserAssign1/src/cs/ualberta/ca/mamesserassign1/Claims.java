@@ -72,7 +72,7 @@ public class Claims {
 	}
 	//To String for what I want to see in the ListView
 	public String toString(){
-		return getClaimName()+"       "+getStatus();
+		return getClaimName()+"                           "+getStatus();
 	}
 
 }

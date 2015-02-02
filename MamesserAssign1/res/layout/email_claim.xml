@@ -4,17 +4,6 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/EmailTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:text="Email Claim"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
         android:id="@+id/EmailToTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -89,24 +78,34 @@
         android:id="@+id/EmailDescriptionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/sendingEmailButton"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/EmailSubjectLineText"
         android:layout_marginTop="15dp"
         android:ems="10"
         android:inputType="textMultiLine" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/sendingEmailButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/EmailDescriptionText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:onClick="sendYourClaimButtonAction"
+        android:text="Send Your Claim" />
+
+    <TextView
+        android:id="@+id/EmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:text="HOW TO PUT DATA IN HERE"
+        android:text="Email Claim"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

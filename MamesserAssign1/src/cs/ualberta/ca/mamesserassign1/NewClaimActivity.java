@@ -48,6 +48,7 @@ public class NewClaimActivity extends Activity {
 		getMenuInflater().inflate(R.menu.new_claim, menu);
 		return true;
 	}
+	//The button in the new claim activity that adds a claim to the list given the parameters
 	public void addClaimButtonAction(View v){
 		Toast.makeText(this, "Adding a Claim", Toast.LENGTH_SHORT).show();
 		ClaimsListController clc = new ClaimsListController();

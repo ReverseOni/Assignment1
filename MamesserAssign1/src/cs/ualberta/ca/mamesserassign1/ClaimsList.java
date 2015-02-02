@@ -47,7 +47,7 @@ public class ClaimsList {
 	}
 	//Listener Methods for updating ClaimsList list view
 	private void notifyListeners() {
-		for (ClaimsListListener listeners : listeners){
+		for (ClaimsListListener listeners : this.listeners){
 			listeners.update();
 	}
 		
